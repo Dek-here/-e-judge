@@ -3,12 +3,12 @@ def main():
     """ isprime_small """
     numfonnarak = int(input())
     if numfonnarak > 1:
-        for i in range(2, numfonnarak):
+        for i in range(2, int(numfonnarak**0.5)+1):
             if (numfonnarak % i) == 0:
-                print("No")
+                print("NO")
                 break
         else:
-            print("Yes")
+            print("YES")
     else:
-        print("No")
+        print("NO")
 main()
